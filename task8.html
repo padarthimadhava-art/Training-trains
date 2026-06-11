@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url("images/t5-img.jpg") center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+        }
+        .hero-content button {
+            padding: 12px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .hero-content button:hover {
+            background-color: #0056b3;
+        }
+        .portfolio-gallery {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .portfolio-gallery h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+        .gallery-item {
+            display: inline-block;
+            width: 300px;
+            margin: 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover {
+            transform: translateY(-10px);
+        }
+        .gallery-item img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .gallery-item h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+        .gallery-item p {
+            font-size: 1rem;
+            padding: 0 15px 15px;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .hero-content p {
+                font-size: 1rem;
+            }
+            .hero-content button {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+            .gallery-item {
+                width: 100%;
+                margin: 15px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="portfolio-gallery">
+        <h2>Our Portfolio</h2>
+        <div class="gallery-item">
+            <img src="images/smart pet feeder img.png" alt="Project 1">
+            <h3>Smart Pet Feeder</h3>
+            <p>This is a simple smart pet feeder that uses AI to predict when your pet needs food.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/Animal extinction prediction img.png" alt="Project 2">
+            <h3>Animal Extinction Prediction</h3>
+            <p>This is a machine learning model that predicts the likelihood of animal species going extinct in the next decade.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/weather prediction img.png" alt="Project 3">
+            <h3>Weather Prediction</h3>
+            <p>This is a deep learning model that predicts weather patterns with high accuracy.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
