@@ -1,0 +1,133 @@
+<!-- Create tablet responsive design -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablet Responsive Design</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Main Content */
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Tablet Responsive */
+        @media (min-width: 769px) and (max-width: 1024px) {
+
+            nav {
+                flex-direction: column;
+                align-items:center
+                ;
+                gap :10 px ;
+                }
+            
+             .container{
+                 flex-direction : column ;
+                 }
+            
+             .content,
+             .sidebar{
+                 width :100% ;
+                 }
+             }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tablet Responsive Design</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="content">
+            <h2>Main Content</h2>
+            <p>
+               This section offers comprehensive insights into our services, showcasing our expertise and commitment to excellence. We strive to provide top-notch solutions tailored to meet the unique needs of our clients, ensuring satisfaction and success in every project we undertake.
+            </p>
+        </div>
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>
+            This is will available upto 1024px screen size. It contains additional information, links, or advertisements that complement the main content. The sidebar is designed to enhance user experience by providing easy access to relevant resources and promoting engagement with the website.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Responsive Website. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html> 
