@@ -1,0 +1,111 @@
+ <!-- Create settings page UI -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Settings</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .settings-container {
+            width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .checkbox {
+            margin-top: 15px;
+        }
+
+        .checkbox input {
+            width: auto;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="settings-container">
+        <h2> Settings</h2>
+
+        <form>
+
+            <label>Student Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Mobile Number</label>
+            <input type="tel" placeholder="Enter your mobile number">
+
+            <label>Department</label>
+            <select>
+                <option>Computer Science</option>
+                <option>Information Technology</option>
+                <option>Electronics</option>
+                <option>Mechanical</option>
+                <option>Civil</option>
+            </select>
+
+            <label>Change Password</label>
+            <input type="password" placeholder="Enter new password">
+
+            <div class="checkbox">
+                <input type="checkbox" id="notify">
+                <label for="notify" style="display:inline;">
+                    Receive Email Notifications
+                </label>
+            </div>
+
+            <button type="submit">Save Changes</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
