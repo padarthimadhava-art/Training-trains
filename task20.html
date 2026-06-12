@@ -1,0 +1,133 @@
+ <!-- Develop mobile responsive layout -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Responsive Layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Main Content */
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .content,
+            .sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mobile Responsive Layout</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="content">
+            <h2>Main Content</h2>
+            <p>
+                This section contains the main content of the webpage.
+                On mobile devices, it automatically adjusts to fit the screen.
+            </p>
+        </div>
+
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>
+                This sidebar moves below the main content on smaller screens.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Responsive Website. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
