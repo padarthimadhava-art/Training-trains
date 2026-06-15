@@ -1,0 +1,124 @@
+ <!-- Create food delivery UI -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery App</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+        body{
+            background:#f4f4f4;
+        }
+        /* Header */
+        header{
+            background:#ff5722;
+            color:#fff;
+            text-align:center;
+            padding:20px;
+        }
+        nav{
+            background:#333;
+            text-align:center;
+            padding:12px;
+        }
+        nav a{
+            color:#fff;
+            text-decoration:none;
+            margin:0 15px;
+        }
+        /* Hero */
+        .hero{
+            text-align:center;
+            padding:60px 20px;
+            background:#ffe0b2;
+        }
+        .hero h2{
+            font-size:36px;
+            margin-bottom:15px;
+        }
+        .hero p{
+            margin-bottom:20px;
+        }
+        .hero button{
+            padding:10px 20px;
+            background:#ff5722;
+            color:#fff;
+            border:none;
+            cursor:pointer;
+        }
+        /* Food Menu */
+        .menu{
+            display:flex;
+            justify-content:space-around;
+            padding:40px 20px;
+        }
+        .card{
+            background:#fff;
+            border-radius:8px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1);
+            width:300px;
+            text-align:center;
+            padding:20px;
+        }
+        .card img{
+            width:100%;
+            border-radius:8px 8px 0 0;
+        }
+        .card h3{
+            margin:15px 0;
+        }
+        .card p{
+            color:#777;
+            margin-bottom:15px;
+        }
+        .card button{
+            padding:10px 20px;
+            background:#ff5722;
+            color:#fff;
+            border:none;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Food Delivery App</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Delicious Food Delivered To You</h2>
+        <p>Order your favorite meals from our wide selection of restaurants.</p>
+        <button>Order Now</button>
+    </section>
+    <section class="menu">
+        <div class="card">
+            <img src="images/pizza img.jpeg" alt="Pizza">
+            <h3>Margherita Pizza</h3>
+            <p>Classic pizza with fresh tomatoes and mozzarella.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <img src="images/cheese burger.jpeg" alt="Burger">
+            <h3>Cheeseburger</h3>
+            <p>Juicy beef patty with cheese and fresh toppings.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <img src="images/Sushi Platter img'.jpeg " alt="Sushi">
+            <h3>Sushi Platter</h3>
+            <p>Assorted sushi rolls with fresh fish and vegetables.</p>
+            <button>Order Now</button>
+        </div>
+    </section>
+</body>
+</html>
