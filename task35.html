@@ -1,0 +1,188 @@
+<!-- Design analytics dashboard -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analytics Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* Header */
+header{
+    background:#1e3a8a;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+/* Dashboard Cards */
+.dashboard{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    padding:30px;
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    width:250px;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color:#555;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:32px;
+    font-weight:bold;
+    color:#1e3a8a;
+}
+
+/* Table */
+.analytics-table{
+    max-width:1100px;
+    margin:20px auto;
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.analytics-table h2{
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+    text-align:left;
+}
+
+th{
+    background:#1e3a8a;
+    color:white;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.dashboard{
+    flex-direction:column;
+    align-items:center;
+}
+
+.card{
+    width:90%;
+}
+
+table{
+    font-size:14px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>📊 Analytics Dashboard</h1>
+</header>
+
+<div class="dashboard">
+
+    <div class="card">
+        <h2>Total Visitors</h2>
+        <p>15,240</p>
+    </div>
+
+    <div class="card">
+        <h2>Page Views</h2>
+        <p>42980</p>
+    </div>
+
+    <div class="card">
+        <h2>Conversions</h2>
+        <p>1,280</p>
+    </div>
+
+    <div class="card">
+        <h2>Bounce Rate</h2>
+        <p>32%</p>
+    </div>
+
+</div>
+
+<div class="analytics-table">
+
+    <h2>Recent Analytics</h2>
+
+    <table>
+
+        <tr>
+            <th>Date</th>
+            <th>Visitors</th>
+            <th>Page Views</th>
+            <th>Conversions</th>
+        </tr>
+
+        <tr>
+            <td>01 Jun 2026</td>
+            <td>2,500</td>
+            <td>6,800</td>
+            <td>180</td>
+        </tr>
+
+        <tr>
+            <td>02 Jun 2026</td>
+            <td>2,850</td>
+            <td>7,250</td>
+            <td>210</td>
+        </tr>
+
+        <tr>
+            <td>03 Jun 2026</td>
+            <td>3,100</td>
+            <td>8,020</td>
+            <td>245</td>
+        </tr>
+
+        <tr>
+            <td>04 Jun 2026</td>
+            <td>3,450</td>
+            <td>9,150</td>
+            <td>280</td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>  
