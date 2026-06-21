@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Media Feed UI</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f0f2f5;
+}
+
+/* Header */
+header{
+    background:#1877f2;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* Feed Container */
+.feed{
+    max-width:600px;
+    margin:30px auto;
+}
+
+/* Post Card */
+.post{
+    background:white;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* User Info */
+.user{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.user img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.user h3{
+    font-size:18px;
+}
+
+.user p{
+    color:gray;
+    font-size:14px;
+}
+
+/* Post Content */
+.post-content img{
+    width:100%;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+.post-content p{
+    margin-bottom:10px;
+}
+
+/* Actions */
+.actions{
+    display:flex;
+    justify-content:space-around;
+    margin-top:15px;
+    border-top:1px solid #ddd;
+    padding-top:10px;
+}
+
+.actions button{
+    border:none;
+    background:none;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.actions button:hover{
+    color:#1877f2;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    📱 Social Media Feed
+</header>
+
+<div class="feed">
+
+    <!-- Post 1 -->
+    <div class="post">
+
+        <div class="user">
+            <img src="images/profile pic img.jpeg" alt="Profile">
+            <div>
+                <h3>Madhava</h3>
+                <p>2 hours ago</p>
+            </div>
+        </div>
+
+        <div class="post-content">
+            <p>🚀 Just completed a new HTML & CSS project. Learning every day!</p>
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Post Image">
+        </div>
+
+        <div class="actions">
+            <button>👍 Like</button>
+            <button>💬 Comment</button>
+            <button>🔄 Share</button>
+        </div>
+
+    </div>
+
+    <!-- Post 2 -->
+    <div class="post">
+
+        <div class="user">
+            <img src="images/t-36 img.jpeg" alt="profile picture">
+            <div>
+                <h3>Guru sai</h3>
+                <p>5 hours ago</p>
+            </div>
+        </div>                      
+
+        <div class="post-content">
+            <p>🌅 Enjoying a beautiful evening and working on frontend projects.</p>
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800" alt="Nature">
+        </div>
+
+        <div class="actions">
+            <button>👍 Like</button>
+            <button>💬 Comment</button>
+            <button>🔄 Share</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
