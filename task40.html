@@ -1,0 +1,83 @@
+<!-- Create responsive cards -->
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .card-description {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Cards</h1>
+    <div class="card-container">
+        <div class="card">
+            <img src="images/watch img.jpeg" alt="Card Image">
+            <div class="card-content">
+                <h2 class="card-title
+">smart watch</h2>
+                <p class="card-description">This is a smart watch .It has a sleek design and advanced features.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/t-40.3img.jpeg" alt="Card Image">
+            <div class="card-content">
+                <h2 class="card-title">Analog watch</h2>
+                <p class="card-description">This is an analog watch. It has a classic design and reliable functionality.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/casio img.png" alt="Card Image">
+            <div class="card-content">
+                <h2 class="card-title
+">Casio digital watch</h2>
+                <p class="card-description">This is a Casio digital watch. It has a modern design and useful features.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/strip watch.jpeg" alt="Card Image">
+            <div class="card-content">
+                <h2 class="card-title">Strip watch</h2>
+                <p class="card-description">This is a strip watch. It has a simple design and basic functionality.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
