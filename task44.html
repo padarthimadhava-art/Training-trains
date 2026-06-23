@@ -1,0 +1,99 @@
+ <!-- Create dropdown navigation -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dropdown Navigation</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+nav{
+    background:#1e3a8a;
+}
+
+.menu{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu li a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+}
+
+.menu li:hover{
+    background:#2563eb;
+}
+
+/* Dropdown */
+.dropdown{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#1e293b;
+    min-width:180px;
+    list-style:none;
+}
+
+.dropdown li a{
+    padding:12px;
+}
+
+.menu li:hover .dropdown{
+    display:block;
+}
+
+.dropdown li:hover{
+    background:#334155;
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+
+        <li>
+            <a href="#">Services ▼</a>
+            <ul class="dropdown">
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">SEO</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Products ▼</a>
+            <ul class="dropdown">
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">Watch</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>
