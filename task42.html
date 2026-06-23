@@ -1,0 +1,45 @@
+ <!-- Create notification panel -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Panel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .notification {
+            background-color: #fff;
+            border-left: 5px solid #4CAF50;
+            padding: 15px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .notification h2 {
+            margin-top: 0;
+        }
+        .notification p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Notification Panel</h1>
+    <div class="notification">
+        <h2>Success!</h2>
+        <p>Your action was successful.</p>
+    </div>
+    <div class="notification" style="border-left-color: #f44336;">
+        <h2>Error!</h2>
+        <p>There was an error processing your request.</p>
+    </div>
+    <div class="notification" style="border-left-color: #ff9800;">
+        <h2>Warning!</h2>
+        <p>Please be cautious while performing this action.</p>
+    </div>
+</body>
+</html>
