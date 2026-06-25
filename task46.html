@@ -1,0 +1,59 @@
+ <!-- Create breadcrumb navigation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breadcrumb Navigation</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background: #f4f4f4;
+}
+
+.breadcrumb{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover{
+    text-decoration: underline;
+}
+
+.breadcrumb span{
+    color: #666;
+}
+
+.breadcrumb .active{
+    color: #333;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div class="breadcrumb">
+    <a href="#">Home</a>
+    <span>›</span>
+    <a href="#">Products</a>
+    <span>›</span>
+    <a href="#">Electronics</a>
+    <span>›</span>
+    <span class="active">Smartphones</span>
+</div>
+
+</body>
+</html>

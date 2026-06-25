@@ -1,0 +1,65 @@
+ <!-- Design search bar UI -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Bar UI</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f4f4f4;
+}
+
+.search-box{
+    display:flex;
+    width:400px;
+    background:#fff;
+    border-radius:50px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.search-box input{
+    flex:1;
+    border:none;
+    outline:none;
+    padding:15px 20px;
+    font-size:16px;
+}
+
+.search-box button{
+    border:none;
+    background:#007bff;
+    color:#fff;
+    padding:15px 25px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.search-box button:hover{
+    background:#0056b3;
+}
+</style>
+</head>
+<body>
+
+<div class="search-box">
+    <input type="text" placeholder="Search here...">
+    <button>🔍</button>
+</div>
+
+</body>
+</html>
