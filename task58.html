@@ -1,0 +1,210 @@
+ <!-- Create animated banners -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Banner</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+}
+
+.banner{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+    overflow:hidden;
+    position:relative;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+/* Background Glow */
+.banner::before,
+.banner::after{
+    content:"";
+    position:absolute;
+    border-radius:50%;
+    filter:blur(80px);
+}
+
+.banner::before{
+    width:280px;
+    height:280px;
+    background:#3b82f6;
+    top:-80px;
+    left:-80px;
+}
+
+.banner::after{
+    width:320px;
+    height:320px;
+    background:#8b5cf6;
+    right:-100px;
+    bottom:-80px;
+}
+
+.left{
+    width:50%;
+    color:#fff;
+    z-index:2;
+}
+
+.left span{
+    color:#38bdf8;
+    font-size:18px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.left h1{
+    font-size:60px;
+    margin:20px 0;
+    line-height:1.2;
+    animation:slideUp 1s ease;
+}
+
+.left p{
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:35px;
+    max-width:500px;
+    animation:fade 1.5s ease;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    text-decoration:none;
+    color:#fff;
+    border-radius:50px;
+    background:#3b82f6;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#2563eb;
+    transform:translateY(-4px);
+}
+
+/* Right Cards */
+.right{
+    width:40%;
+    position:relative;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.1);
+    backdrop-filter:blur(12px);
+    color:#fff;
+    padding:25px;
+    border-radius:20px;
+    margin:20px;
+    animation:float 4s ease-in-out infinite;
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+.card:nth-child(2){
+    margin-left:80px;
+    animation-delay:1.5s;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#cbd5e1;
+}
+
+@keyframes float{
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+@keyframes slideUp{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fade{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@media(max-width:768px){
+    .banner{
+        flex-direction:column;
+        justify-content:center;
+        text-align:center;
+        padding:50px 20px;
+    }
+
+    .left,.right{
+        width:100%;
+    }
+
+    .left h1{
+        font-size:42px;
+    }
+
+    .card:nth-child(2){
+        margin-left:20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="banner">
+
+<div class="left">
+<span>Modern Landing Page</span>
+
+<h1>Build Beautiful Web Experiences</h1>
+
+<p>
+Create responsive and interactive websites with clean HTML & CSS. Turn ideas into elegant user interfaces.
+</p>
+
+<a href="#" class="btn">Explore Now</a>
+
+</div>
+
+<div class="right">
+
+<div class="card">
+<h3>⚡ Fast Performance</h3>
+<p>Optimized layouts with clean and efficient code.</p>
+</div>
+
+<div class="card">
+<h3>🎨 Modern Design</h3>
+<p>Responsive UI with smooth animations and premium styling.</p>
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+ <!-- Create custom icon sets -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom SVG Icons</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    display:flex;
+    gap:30px;
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.icon{
+    width:70px;
+    height:70px;
+    border-radius:15px;
+    background:#f5f5f5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.icon:hover{
+    transform:translateY(-8px) scale(1.1);
+    background:#4f46e5;
+}
+
+.icon svg{
+    width:40px;
+    height:40px;
+}
+
+.icon svg path,
+.icon svg circle,
+.icon svg line{
+    stroke:#4f46e5;
+    stroke-width:2;
+    fill:none;
+    transition:.3s;
+}
+
+.icon:hover svg path,
+.icon:hover svg circle,
+.icon:hover svg line{
+    stroke:#fff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Camera -->
+<div class="icon">
+<svg viewBox="0 0 24 24">
+<path d="M4 7h3l2-2h6l2 2h3v12H4z"/>
+<circle cx="12" cy="13" r="4"/>
+</svg>
+</div>
+
+<!-- Bell -->
+<div class="icon">
+<svg viewBox="0 0 24 24">
+<path d="M12 3a4 4 0 0 1 4 4v3c0 1.5.6 3 2 4H6c1.4-1 2-2.5 2-4V7a4 4 0 0 1 4-4z"/>
+<path d="M10 19a2 2 0 0 0 4 0"/>
+</svg>
+</div>
+
+<!-- Star -->
+<div class="icon">
+<svg viewBox="0 0 24 24">
+<path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/>
+</svg>
+</div>
+
+<!-- Settings -->
+<div class="icon">
+<svg viewBox="0 0 24 24">
+<circle cx="12" cy="12" r="3"/>
+<path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/>
+</svg>
+</div>
+
+</div>
+
+</body>
+</html>

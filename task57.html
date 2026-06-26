@@ -1,0 +1,128 @@
+ <!-- Design parallax sections -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parallax Sections</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Content Sections */
+.content{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:40px;
+}
+
+.content h1{
+    font-size:55px;
+    color:#222;
+    margin-bottom:15px;
+}
+
+.content p{
+    max-width:650px;
+    color:#666;
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* Parallax Sections */
+.parallax{
+    height:100vh;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.parallax::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.parallax h2{
+    position:relative;
+    color:#fff;
+    font-size:60px;
+    letter-spacing:3px;
+    z-index:1;
+}
+
+/* Images */
+.bg1{
+    background-image:url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600");
+}
+
+.bg2{
+    background-image:url("https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=1600");
+}
+
+.bg3{
+    background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600");
+}
+</style>
+</head>
+
+<body>
+
+<section class="content">
+    <h1>Parallax Scrolling</h1>
+    <p>
+        Scroll down to experience a beautiful parallax effect created using only HTML & CSS.
+    </p>
+</section>
+
+<section class="parallax bg1">
+    <h2>Mountains</h2>
+</section>
+
+<section class="content">
+    <h1>Adventure</h1>
+    <p>
+        Parallax scrolling adds depth and creates a more immersive browsing experience.
+    </p>
+</section>
+
+<section class="parallax bg2">
+    <h2>Himalayas</h2>
+</section>
+
+<section class="content">
+    <h1>Explore Nature</h1>
+    <p>
+        This effect is perfect for portfolios, travel websites, and landing pages.
+    </p>
+</section>
+
+<section class="parallax bg3">
+    <h2>Ocean</h2>
+</section>
+
+</body>
+</html>
