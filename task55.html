@@ -1,0 +1,116 @@
+<!-- Design hover animations -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover Animations</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f5f7fb;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+    width:90%;
+    max-width:900px;
+}
+
+.box{
+    background:#fff;
+    padding:40px;
+    text-align:center;
+    border-radius:15px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+/* Lift */
+.lift:hover{
+    transform:translateY(-12px);
+}
+
+/* Scale */
+.scale:hover{
+    transform:scale(1.1);
+}
+
+/* Rotate */
+.rotate:hover{
+    transform:rotate(5deg);
+}
+
+/* Glow */
+.glow:hover{
+    box-shadow:0 0 25px #4f46e5;
+}
+
+/* Border Animation */
+.border{
+    position:relative;
+    overflow:hidden;
+}
+
+.border::before{
+    content:"";
+    position:absolute;
+    left:-100%;
+    bottom:0;
+    width:100%;
+    height:4px;
+    background:#4f46e5;
+    transition:.4s;
+}
+
+.border:hover::before{
+    left:0;
+}
+
+/* Gradient Hover */
+.gradient{
+    background:#fff;
+}
+
+.gradient:hover{
+    background:linear-gradient(135deg,#4f46e5,#06b6d4);
+    color:#fff;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="box lift">Lift</div>
+
+<div class="box scale">Scale</div>
+
+<div class="box rotate">Rotate</div>
+
+<div class="box glow">Glow</div>
+
+<div class="box border">Border</div>
+
+<div class="box gradient">Gradient</div>
+
+</div>
+
+</body>
+</html>
