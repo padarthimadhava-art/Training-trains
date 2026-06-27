@@ -1,0 +1,211 @@
+<!-- Create Instagram story design -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram Story UI</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+.story{
+    width:360px;
+    height:640px;
+    border-radius:30px;
+    overflow:hidden;
+    position:relative;
+    background:url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900") center/cover;
+    box-shadow:0 20px 40px rgba(0,0,0,.3);
+}
+
+/* Dark Overlay */
+.story::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to bottom,
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.1),
+        rgba(0,0,0,.7));
+}
+
+/* Progress Bar */
+.progress{
+    position:absolute;
+    top:15px;
+    left:15px;
+    width:330px;
+    height:4px;
+    background:rgba(255,255,255,.3);
+    border-radius:10px;
+    z-index:2;
+}
+
+.progress span{
+    display:block;
+    width:60%;
+    height:100%;
+    background:#fff;
+    border-radius:10px;
+}
+
+/* Header */
+.header{
+    position:absolute;
+    top:35px;
+    left:18px;
+    right:18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    z-index:2;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.profile img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    border:2px solid #fff;
+    object-fit:cover;
+}
+
+.info h3{
+    color:#fff;
+    font-size:16px;
+}
+
+.info p{
+    color:#ddd;
+    font-size:12px;
+}
+
+.menu{
+    color:#fff;
+    font-size:24px;
+}
+
+/* Story Content */
+.content{
+    position:absolute;
+    left:25px;
+    right:25px;
+    bottom:90px;
+    color:#fff;
+    z-index:2;
+}
+
+.content h1{
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.content p{
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:#fff;
+    color:#764ba2;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+/* Bottom Reply */
+.reply{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    right:20px;
+    display:flex;
+    gap:10px;
+    z-index:2;
+}
+
+.reply input{
+    flex:1;
+    padding:12px 18px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,.4);
+    background:transparent;
+    color:#fff;
+    outline:none;
+}
+
+.reply input::placeholder{
+    color:#ddd;
+}
+
+.reply button{
+    width:50px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    cursor:pointer;
+    font-size:20px;
+}
+</style>
+</head>
+<body>
+
+<div class="story">
+
+    <div class="progress">
+        <span></span>
+    </div>
+
+    <div class="header">
+
+        <div class="profile">
+            <img src="images/profile pic img.jpeg" alt="Madhava Profile Picture">
+            <div class="info">
+                <h3>Madhava</h3>
+                <p>5m ago</p>
+            </div>
+        </div>
+
+        <div class="menu">⋮</div>
+
+    </div>
+
+    <div class="content">
+        <h1>New UI Design 🚀</h1>
+        <p>
+            Built a modern Instagram Story interface using only HTML & CSS with a responsive and clean design.
+        </p>
+
+        <a href="#" class="btn">View Project</a>
+    </div>
+
+    <div class="reply">
+        <input type="text" placeholder="Send message">
+        <button>❤️</button>
+    </div>
+
+</div>
+
+</body>
+</html>

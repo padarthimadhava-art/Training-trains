@@ -1,0 +1,148 @@
+ <!-- Create banner advertisements -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banner Advertisement</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.banner{
+    width:900px;
+    max-width:95%;
+    background:linear-gradient(135deg,#4F46E5,#7C3AED,#EC4899);
+    border-radius:20px;
+    padding:40px;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+    overflow:hidden;
+    position:relative;
+}
+
+.banner::before{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    background:rgba(255,255,255,.1);
+    border-radius:50%;
+    top:-80px;
+    right:-80px;
+}
+
+.banner::after{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    background:rgba(255,255,255,.08);
+    border-radius:50%;
+    bottom:-60px;
+    left:-60px;
+}
+
+.content{
+    position:relative;
+    z-index:2;
+}
+
+.offer{
+    display:inline-block;
+    background:#FFD700;
+    color:#222;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+p{
+    font-size:18px;
+    margin-bottom:25px;
+    opacity:.95;
+}
+
+button{
+    padding:14px 30px;
+    border:none;
+    border-radius:40px;
+    background:#fff;
+    color:#4F46E5;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+.image{
+    position:relative;
+    z-index:2;
+    font-size:140px;
+}
+
+@media(max-width:768px){
+
+.banner{
+    flex-direction:column;
+    text-align:center;
+    gap:30px;
+}
+
+h1{
+    font-size:32px;
+}
+
+.image{
+    font-size:90px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="banner">
+
+<div class="content">
+<span class="offer">🔥 Limited Offer</span>
+<h1>Summer Sale 50% OFF</h1>
+<p>Upgrade your style with premium products at unbeatable prices.</p>
+<button>Shop Now</button>
+</div>
+
+<div class="image">
+🛍️
+</div>
+
+</div>
+
+</body>
+</html>

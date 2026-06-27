@@ -1,0 +1,180 @@
+ <!-- Design infographic layout -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infographic Layout</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    max-width:1100px;
+    width:100%;
+    text-align:center;
+}
+
+h1{
+    color:#222;
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+p{
+    color:#666;
+    margin-bottom:50px;
+}
+
+.timeline{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    padding:30px 20px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+    position:relative;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:6px;
+}
+
+.card:nth-child(1)::before{
+    background:#6C63FF;
+}
+.card:nth-child(2)::before{
+    background:#00C9A7;
+}
+.card:nth-child(3)::before{
+    background:#FF6B6B;
+}
+.card:nth-child(4)::before{
+    background:#F9A826;
+}
+
+.icon{
+    width:80px;
+    height:80px;
+    margin:auto;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:36px;
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.card:nth-child(1) .icon{
+    background:#6C63FF;
+}
+.card:nth-child(2) .icon{
+    background:#00C9A7;
+}
+.card:nth-child(3) .icon{
+    background:#FF6B6B;
+}
+.card:nth-child(4) .icon{
+    background:#F9A826;
+}
+
+h2{
+    margin-bottom:10px;
+    color:#222;
+}
+
+.text{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.number{
+    font-size:32px;
+    font-weight:bold;
+    color:#222;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Project Infographic</h1>
+<p>Visual representation of a simple four-step workflow.</p>
+
+<div class="timeline">
+
+<div class="card">
+<div class="icon">💡</div>
+<h2>Idea</h2>
+<p class="text">
+Brainstorm creative concepts and identify project goals.
+</p>
+<div class="number">01</div>
+</div>
+
+<div class="card">
+<div class="icon">🎨</div>
+<h2>Design</h2>
+<p class="text">
+Create wireframes, UI mockups, and user-friendly layouts.
+</p>
+<div class="number">02</div>
+</div>
+
+<div class="card">
+<div class="icon">💻</div>
+<h2>Develop</h2>
+<p class="text">
+Convert the design into responsive HTML, CSS, and JavaScript.
+</p>
+<div class="number">03</div>
+</div>
+
+<div class="card">
+<div class="icon">🚀</div>
+<h2>Launch</h2>
+<p class="text">
+Deploy the project and monitor performance improvements.
+</p>
+<div class="number">04</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

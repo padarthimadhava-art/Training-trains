@@ -1,0 +1,200 @@
+ <!-- Design LinkedIn banner -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkedIn Banner</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.banner{
+    width:1200px;
+    max-width:100%;
+    height:350px;
+    background:linear-gradient(135deg,#0f172a,#2563eb,#06b6d4);
+    border-radius:24px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+
+.banner::before{
+    content:"";
+    position:absolute;
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    top:-120px;
+    right:-80px;
+}
+
+.banner::after{
+    content:"";
+    position:absolute;
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    background:rgba(255,255,255,.06);
+    bottom:-80px;
+    left:-60px;
+}
+
+.content{
+    position:relative;
+    z-index:2;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:100%;
+    padding:50px 70px;
+}
+
+.left{
+    color:#fff;
+}
+
+.left h1{
+    font-size:52px;
+    margin-bottom:12px;
+}
+
+.left h2{
+    font-size:24px;
+    color:#dbeafe;
+    margin-bottom:18px;
+}
+
+.left p{
+    max-width:500px;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.skills{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.skills span{
+    padding:10px 18px;
+    border-radius:30px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+}
+
+button{
+    padding:14px 28px;
+    border:none;
+    border-radius:30px;
+    background:#fff;
+    color:#2563eb;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.profile{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    overflow:hidden;
+    border:6px solid rgba(255,255,255,.25);
+}
+
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+@media(max-width:900px){
+
+.banner{
+    height:auto;
+}
+
+.content{
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:35px;
+    padding:40px 25px;
+}
+
+.skills{
+    justify-content:center;
+}
+
+.left h1{
+    font-size:38px;
+}
+
+.profile{
+    width:170px;
+    height:170px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="banner">
+
+<div class="content">
+
+<div class="left">
+
+<h1>Madhava</h1>
+
+<h2>Frontend Developer</h2>
+
+<p>
+Passionate about creating responsive websites, modern UI components, and engaging web experiences using HTML, CSS, and JavaScript.
+</p>
+
+<div class="skills">
+<span>HTML5</span>
+<span>CSS3</span>
+<span>JavaScript</span>
+<span>Responsive UI</span>
+</div>
+
+<button>Let's Connect</button>
+
+</div>
+
+<div class="profile">
+<img src="images/profile pic img.jpeg" alt="Profile">
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
