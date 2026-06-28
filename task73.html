@@ -1,0 +1,199 @@
+<!-- Design business card layout -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Card</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* Card */
+.card{
+    width:850px;
+    height:450px;
+    display:flex;
+    border-radius:20px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+/* Left Side */
+.left{
+    width:35%;
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.profile{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:5px solid #fff;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.left h2{
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.left p{
+    opacity:.9;
+}
+
+/* Right Side */
+.right{
+    width:65%;
+    padding:45px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.right h1{
+    color:#1f2937;
+    margin-bottom:12px;
+}
+
+.role{
+    color:#2563EB;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+.info{
+    margin-bottom:18px;
+    color:#555;
+    font-size:18px;
+}
+
+.info span{
+    font-weight:bold;
+    color:#1f2937;
+}
+
+.social{
+    margin-top:25px;
+    display:flex;
+    gap:15px;
+}
+
+.social div{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#2563EB;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social div:hover{
+    transform:scale(1.1);
+    background:#7C3AED;
+}
+
+@media(max-width:900px){
+
+.card{
+    width:95%;
+    height:auto;
+    flex-direction:column;
+}
+
+.left,
+.right{
+    width:100%;
+}
+
+.right{
+    padding:30px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+<div class="left">
+
+<div class="profile">
+<img src="images/profile pic img.jpeg" alt="Profile">
+</div>
+
+<h2>Madhava</h2>
+<p>Frontend Developer</p>
+
+</div>
+
+<div class="right">
+
+<h1>Business Card</h1>
+
+<p class="role">UI/UX & Frontend Developer</p>
+
+<div class="info">
+<span>📧 Email:</span> madhava@gmail.com
+</div>
+
+<div class="info">
+<span>📞 Phone:</span> +91 98765 43210
+</div>
+
+<div class="info">
+<span>🌐 Website:</span> www.madhava.dev
+</div>
+
+<div class="info">
+<span>📍 Location:</span> India
+</div>
+
+<div class="social">
+<div>💼</div>
+<div>🐙</div>
+<div>📷</div>
+<div>🌐</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

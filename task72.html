@@ -1,0 +1,174 @@
+ <!-- Create logo presentation -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logo Presentation</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    width:1100px;
+    max-width:100%;
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,.1);
+}
+
+.header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.header h1{
+    font-size:42px;
+    color:#1f2937;
+}
+
+.header p{
+    color:#6b7280;
+    margin-top:10px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#f8fafc;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* Logo */
+.logo{
+    width:120px;
+    height:120px;
+    margin:auto;
+    border-radius:30px;
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:48px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.dark{
+    background:#1f2937;
+}
+
+.light{
+    background:#fff;
+    border:2px solid #ddd;
+    color:#2563EB;
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.6;
+}
+
+.colors{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:20px;
+}
+
+.color{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+}
+
+.c1{background:#2563EB;}
+.c2{background:#7C3AED;}
+.c3{background:#1F2937;}
+.c4{background:#F4F7FB;}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>Logo Presentation</h1>
+<p>Brand identity showcase with logo variations and color palette.</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="logo">M</div>
+<h2>Primary Logo</h2>
+<p>Main brand logo used across websites and digital platforms.</p>
+</div>
+
+<div class="card">
+<div class="logo dark">M</div>
+<h2>Dark Version</h2>
+<p>Ideal for light backgrounds and printed materials.</p>
+</div>
+
+<div class="card">
+<div class="logo light">M</div>
+<h2>Light Version</h2>
+<p>Used on dark backgrounds for better visibility.</p>
+</div>
+
+<div class="card">
+<h2>Brand Colors</h2>
+
+<div class="colors">
+<div class="color c1"></div>
+<div class="color c2"></div>
+<div class="color c3"></div>
+<div class="color c4"></div>
+</div>
+
+<p style="margin-top:20px;">
+Primary • Secondary • Dark • Background
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

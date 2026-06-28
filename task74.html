@@ -1,0 +1,260 @@
+ <!-- Create brochure design -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tri-Fold Brochure</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:40px;
+}
+
+.brochure{
+    width:1200px;
+    max-width:100%;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.panel{
+    padding:35px;
+    border-right:1px solid #eee;
+}
+
+.panel:last-child{
+    border-right:none;
+}
+
+/* Left Panel */
+.cover{
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.logo{
+    width:80px;
+    height:80px;
+    border-radius:20px;
+    background:#fff;
+    color:#2563EB;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:34px;
+    font-weight:bold;
+}
+
+.cover h1{
+    font-size:42px;
+    margin:25px 0;
+}
+
+.cover p{
+    line-height:1.8;
+    opacity:.9;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#fff;
+    color:#2563EB;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+/* Middle Panel */
+.middle h2,
+.right h2{
+    color:#1f2937;
+    margin-bottom:20px;
+}
+
+.feature{
+    background:#f8fafc;
+    padding:18px;
+    border-radius:12px;
+    margin-bottom:18px;
+}
+
+.feature h3{
+    color:#2563EB;
+    margin-bottom:8px;
+}
+
+.feature p{
+    color:#555;
+    line-height:1.6;
+}
+
+/* Right Panel */
+.contact{
+    margin-top:20px;
+}
+
+.contact p{
+    margin:14px 0;
+    color:#555;
+}
+
+.social{
+    display:flex;
+    gap:12px;
+    margin-top:30px;
+}
+
+.social div{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#2563EB;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social div:hover{
+    background:#7C3AED;
+    transform:scale(1.08);
+}
+
+.footer{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid #ddd;
+    color:#777;
+}
+
+@media(max-width:900px){
+
+.brochure{
+    grid-template-columns:1fr;
+}
+
+.panel{
+    border-right:none;
+    border-bottom:1px solid #eee;
+}
+
+.panel:last-child{
+    border-bottom:none;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<div class="brochure">
+
+<!-- Cover -->
+<div class="panel cover">
+
+<div>
+<div class="logo">M</div>
+
+<h1>Creative Studio</h1>
+
+<p>
+We design modern websites, mobile apps, and beautiful digital experiences that help businesses grow.
+</p>
+</div>
+
+<a href="#" class="btn">Learn More</a>
+
+</div>
+
+<!-- Services -->
+<div class="panel middle">
+
+<h2>Our Services</h2>
+
+<div class="feature">
+<h3>🎨 UI/UX Design</h3>
+<p>Modern and user-friendly interface designs.</p>
+</div>
+
+<div class="feature">
+<h3>💻 Web Development</h3>
+<p>Responsive websites built using HTML, CSS & JavaScript.</p>
+</div>
+
+<div class="feature">
+<h3>📱 Mobile Apps</h3>
+<p>Cross-platform mobile app development.</p>
+</div>
+
+<div class="feature">
+<h3>🚀 Digital Marketing</h3>
+<p>SEO, branding, and online marketing solutions.</p>
+</div>
+
+</div>
+
+<!-- Contact -->
+<div class="panel right">
+
+<h2>Why Choose Us?</h2>
+
+<p>
+✔ Professional Team<br><br>
+✔ Creative Solutions<br><br>
+✔ Affordable Pricing<br><br>
+✔ 24/7 Support
+</p>
+
+<div class="contact">
+
+<h2>Contact</h2>
+
+<p>📧 hello@company.com</p>
+<p>📞 +91 98765 43210</p>
+<p>🌐 www.company.com</p>
+<p>📍 Hyderabad, India</p>
+
+</div>
+
+<div class="social">
+<div>💼</div>
+<div>📷</div>
+<div>🐙</div>
+<div>▶️</div>
+</div>
+
+<div class="footer">
+© 2026 Creative Studio
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
