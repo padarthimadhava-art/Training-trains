@@ -1,0 +1,145 @@
+ <!-- Design typography hierarchy -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Typography Hierarchy</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    width:700px;
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.title{
+    text-align:center;
+    margin-bottom:30px;
+    color:#2563eb;
+}
+
+.example{
+    border-bottom:1px solid #ddd;
+    padding:20px 0;
+}
+
+.example:last-child{
+    border:none;
+}
+
+.label{
+    color:#888;
+    font-size:14px;
+    margin-bottom:8px;
+}
+
+.display{
+    font-size:48px;
+    font-weight:bold;
+}
+
+.heading1{
+    font-size:36px;
+    font-weight:bold;
+}
+
+.heading2{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.heading3{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.body{
+    font-size:16px;
+    color:#555;
+    line-height:1.6;
+}
+
+.small{
+    font-size:13px;
+    color:#888;
+}
+
+.button{
+    display:inline-block;
+    background:#2563eb;
+    color:#fff;
+    padding:10px 20px;
+    border-radius:6px;
+    font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1 class="title">Typography Hierarchy</h1>
+
+<div class="example">
+<p class="label">Display Text (48px)</p>
+<p class="display">Big Title</p>
+</div>
+
+<div class="example">
+<p class="label">Heading 1 (36px)</p>
+<p class="heading1">Main Heading</p>
+</div>
+
+<div class="example">
+<p class="label">Heading 2 (28px)</p>
+<p class="heading2">Section Heading</p>
+</div>
+
+<div class="example">
+<p class="label">Heading 3 (22px)</p>
+<p class="heading3">Sub Heading</p>
+</div>
+
+<div class="example">
+<p class="label">Body Text (16px)</p>
+<p class="body">
+This is the main paragraph text used to explain content. Body text should always be easy to read.
+</p>
+</div>
+
+<div class="example">
+<p class="label">Small Text (13px)</p>
+<p class="small">
+Last updated: Today at 10:30 AM
+</p>
+</div>
+
+<div class="example">
+<p class="label">Button Text</p>
+<span class="button">Learn More</span>
+</div>
+
+</div>
+
+</body>
+</html>
