@@ -1,0 +1,196 @@
+ <!-- Design ID card layout -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern ID Card</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* Card */
+
+.card{
+    width:350px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+/* Header */
+
+.header{
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
+    color:#fff;
+    text-align:center;
+    padding:30px 20px 80px;
+    position:relative;
+}
+
+.logo{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#fff;
+    color:#2563EB;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    font-weight:bold;
+    margin:auto;
+}
+
+.header h2{
+    margin-top:15px;
+}
+
+.header p{
+    opacity:.9;
+    font-size:14px;
+}
+
+/* Profile */
+
+.profile{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    overflow:hidden;
+    border:5px solid #fff;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-60px;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Content */
+
+.content{
+    padding:80px 25px 30px;
+    text-align:center;
+}
+
+.content h1{
+    color:#1f2937;
+    font-size:28px;
+}
+
+.role{
+    color:#2563EB;
+    margin:8px 0 20px;
+    font-weight:bold;
+}
+
+.info{
+    text-align:left;
+    margin:20px 0;
+}
+
+.info p{
+    margin:10px 0;
+    color:#555;
+}
+
+.info span{
+    font-weight:bold;
+    color:#111827;
+}
+
+/* QR */
+
+.qr{
+    width:90px;
+    height:90px;
+    margin:25px auto;
+    border:2px dashed #2563EB;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+    color:#2563EB;
+    font-weight:bold;
+}
+
+.footer{
+    background:#111827;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    font-size:14px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+<div class="header">
+
+<div class="logo">
+M
+</div>
+
+<h2>Creative Studio</h2>
+<p>Employee Identity Card</p>
+
+<div class="profile">
+<img src="images/profile pic img.jpeg" alt="Profile">
+</div>
+
+</div>
+
+<div class="content">
+
+<h1>Madhav</h1>
+
+<p class="role">Frontend Developer</p>
+
+<div class="info">
+
+<p><span>ID:</span> EMP-1025</p>
+
+<p><span>Email:</span> madhav@email.com</p>
+
+<p><span>Phone:</span> +91 98765 43210</p>
+
+<p><span>Department:</span> Development</p>
+
+</div>
+
+<div class="qr">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=90x90&data=EMP-1025" alt="QR Code">
+</div>
+</div>
+
+<div class="footer">
+www.creativestudio.com
+</div>
+
+</div>
+
+</body>
+</html>

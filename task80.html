@@ -1,0 +1,281 @@
+ <!-- Create internship poster -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internship Hiring Poster</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#edf2f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+.poster{
+    width:1000px;
+    display:flex;
+    background:#fff;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 20px 45px rgba(0,0,0,.2);
+}
+
+/* Left Panel */
+
+.left{
+    width:40%;
+    background:linear-gradient(160deg,#2563EB,#7C3AED);
+    color:#fff;
+    text-align:center;
+    padding:40px;
+}
+
+.left img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    border:5px solid rgba(255,255,255,.4);
+    margin-bottom:25px;
+}
+
+.logo{
+    width:70px;
+    height:70px;
+    margin:auto;
+    margin-bottom:20px;
+    background:#fff;
+    color:#2563EB;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.left h2{
+    margin-bottom:10px;
+}
+
+.left p{
+    line-height:1.8;
+    opacity:.9;
+}
+
+.social{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:30px;
+}
+
+.social div{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#fff;
+    color:#2563EB;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+}
+
+/* Right Panel */
+
+.right{
+    width:60%;
+    padding:45px;
+}
+
+.tag{
+    display:inline-block;
+    background:#2563EB;
+    color:#fff;
+    padding:10px 22px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.right h1{
+    font-size:48px;
+    color:#111827;
+    margin-bottom:15px;
+}
+
+.right p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.card{
+    background:#f8fafc;
+    padding:20px;
+    border-left:5px solid #2563EB;
+    border-radius:15px;
+}
+
+.card h3{
+    color:#2563EB;
+    margin-bottom:10px;
+}
+
+.skills{
+    margin-top:35px;
+}
+
+.skills h2{
+    margin-bottom:15px;
+}
+
+.skills span{
+    display:inline-block;
+    background:#2563EB;
+    color:#fff;
+    padding:10px 18px;
+    border-radius:25px;
+    margin:8px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    background:#111827;
+    color:#fff;
+    text-decoration:none;
+    border-radius:35px;
+    font-weight:bold;
+}
+
+@media(max-width:900px){
+
+.poster{
+    flex-direction:column;
+}
+
+.left,
+.right{
+    width:100%;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.left img{
+    width:220px;
+    height:220px;
+}
+
+.right h1{
+    font-size:36px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="poster">
+
+<div class="left">
+
+<div class="logo">CS</div>
+
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=500&auto=format&fit=crop" alt="Company Office">
+
+<h2>Creative Studio</h2>
+
+<p>
+Join our innovative team and gain real-world experience by working on exciting web development projects.
+</p>
+
+<div class="social">
+<div>💼</div>
+<div>🌐</div>
+<div>📧</div>
+</div>
+
+</div>
+
+<div class="right">
+
+<div class="tag">
+🚀 WE ARE HIRING
+</div>
+
+<h1>Frontend Developer Intern</h1>
+
+<p>
+Kickstart your career with our paid internship program. Learn from industry professionals, collaborate on live projects, and enhance your frontend development skills.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>📅 Duration</h3>
+<p>3 Months</p>
+</div>
+
+<div class="card">
+<h3>💰 Stipend</h3>
+<p>₹15,000 / Month</p>
+</div>
+
+<div class="card">
+<h3>📍 Location</h3>
+<p>Remote / Hybrid</p>
+</div>
+
+<div class="card">
+<h3>🎓 Eligibility</h3>
+<p>Students & Freshers</p>
+</div>
+
+</div>
+
+<div class="skills">
+
+<h2>Required Skills</h2>
+
+<span>HTML5</span>
+<span>CSS3</span>
+<span>JavaScript</span>
+<span>React</span>
+<span>Git & GitHub</span>
+<span>Responsive Design</span>
+
+</div>
+
+<a href="#" class="btn">Apply Now →</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

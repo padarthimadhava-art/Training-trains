@@ -1,0 +1,206 @@
+<!-- Create event poster -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Poster</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#eef2f7;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:30px;
+}
+
+.poster{
+width:800px;
+background:#0f172a;
+border-radius:20px;
+overflow:hidden;
+color:#fff;
+box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
+.hero{
+background:linear-gradient(135deg,#2563EB,#7C3AED);
+padding:50px;
+text-align:center;
+}
+
+.hero h3{
+font-size:22px;
+letter-spacing:3px;
+}
+
+.hero h1{
+font-size:70px;
+margin:15px 0;
+}
+
+.hero p{
+font-size:20px;
+opacity:.9;
+}
+
+.date{
+margin-top:25px;
+display:inline-block;
+padding:12px 28px;
+background:#fff;
+color:#2563EB;
+border-radius:30px;
+font-weight:bold;
+}
+
+.content{
+padding:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.box{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+}
+
+.box h2{
+margin-bottom:15px;
+color:#38bdf8;
+}
+
+.box p{
+line-height:1.8;
+color:#d1d5db;
+}
+
+.btn{
+display:block;
+width:220px;
+margin:40px auto 0;
+padding:15px;
+background:#2563EB;
+color:#fff;
+text-align:center;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#7C3AED;
+}
+
+.footer{
+background:#111827;
+padding:25px;
+text-align:center;
+font-size:15px;
+color:#cbd5e1;
+}
+
+@media(max-width:768px){
+
+.poster{
+width:100%;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="poster">
+
+<div class="hero">
+
+<h3>ANNUAL TECH EVENT</h3>
+
+<h1>TECH FEST 2026</h1>
+
+<p>Innovate • Learn • Connect</p>
+
+<div class="date">
+📅 15 August 2026 | 🕙 10:00 AM
+</div>
+
+</div>
+
+<div class="content">
+
+<div class="grid">
+
+<div class="box">
+
+<h2>🚀 Event Highlights</h2>
+
+<p>
+✔ Expert Speakers<br><br>
+✔ Live Coding Sessions<br><br>
+✔ Networking Opportunities<br><br>
+✔ Exciting Giveaways
+</p>
+
+</div>
+
+<div class="box">
+
+<h2>📍 Venue</h2>
+
+<p>
+Tech Convention Center<br><br>
+
+Hyderabad, Telangana<br><br>
+
+📞 +91 98765 43210<br><br>
+
+🌐 www.techfest.com
+</p>
+
+</div>
+
+</div>
+
+<a href="#" class="btn">
+Register Now
+</a>
+
+</div>
+
+<div class="footer">
+
+Follow Us • Facebook • Instagram • LinkedIn
+
+</div>
+
+</div>
+
+</body>
+</html>
