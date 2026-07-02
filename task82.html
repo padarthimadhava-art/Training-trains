@@ -1,0 +1,323 @@
+<!-- Create UI kit -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern UI Kit</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    padding:40px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:#1f2937;
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:#2563EB;
+}
+
+/* Buttons */
+
+button{
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    margin:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.primary{
+    background:#2563EB;
+    color:#fff;
+}
+
+.success{
+    background:#16A34A;
+    color:#fff;
+}
+
+.danger{
+    background:#DC2626;
+    color:#fff;
+}
+
+.outline{
+    background:#fff;
+    border:2px solid #2563EB;
+    color:#2563EB;
+}
+
+/* Inputs */
+
+input{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+}
+
+input:focus{
+    border-color:#2563EB;
+}
+
+/* Badges */
+
+.badge{
+    display:inline-block;
+    padding:8px 15px;
+    border-radius:20px;
+    margin:8px;
+    color:#fff;
+}
+
+.blue{background:#2563EB;}
+.green{background:#16A34A;}
+.orange{background:#F59E0B;}
+.red{background:#DC2626;}
+
+/* Alerts */
+
+.alert{
+    padding:15px;
+    border-radius:10px;
+    margin:12px 0;
+}
+
+.info{
+    background:#DBEAFE;
+    color:#1D4ED8;
+}
+
+.warning{
+    background:#FEF3C7;
+    color:#92400E;
+}
+
+.error{
+    background:#FEE2E2;
+    color:#B91C1C;
+}
+
+/* Avatar */
+
+.avatar{
+    display:flex;
+    gap:15px;
+}
+
+.avatar img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* Toggle */
+
+.switch{
+position:relative;
+display:inline-block;
+width:60px;
+height:34px;
+}
+
+.switch input{
+display:none;
+}
+
+.slider{
+position:absolute;
+cursor:pointer;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:#ccc;
+border-radius:30px;
+transition:.3s;
+}
+
+.slider:before{
+content:"";
+position:absolute;
+height:26px;
+width:26px;
+left:4px;
+bottom:4px;
+background:#fff;
+border-radius:50%;
+transition:.3s;
+}
+
+input:checked + .slider{
+background:#2563EB;
+}
+
+input:checked + .slider:before{
+transform:translateX(26px);
+}
+
+/* Progress */
+
+.progress{
+height:14px;
+background:#ddd;
+border-radius:20px;
+overflow:hidden;
+margin-top:15px;
+}
+
+.bar{
+height:100%;
+width:75%;
+background:#2563EB;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎨 Modern UI Kit</h1>
+
+<div class="grid">
+
+<div class="card">
+
+<h2>Buttons</h2>
+
+<button class="primary">Primary</button>
+
+<button class="success">Success</button>
+
+<button class="danger">Danger</button>
+
+<button class="outline">Outline</button>
+
+</div>
+
+<div class="card">
+
+<h2>Input Fields</h2>
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email Address">
+
+<input type="password" placeholder="Password">
+
+</div>
+
+<div class="card">
+
+<h2>Badges</h2>
+
+<span class="badge blue">New</span>
+
+<span class="badge green">Success</span>
+
+<span class="badge orange">Pending</span>
+
+<span class="badge red">Error</span>
+
+</div>
+
+<div class="card">
+
+<h2>Alerts</h2>
+
+<div class="alert info">ℹ️ Information Message</div>
+
+<div class="alert warning">⚠️ Warning Message</div>
+
+<div class="alert error">❌ Error Message</div>
+
+</div>
+
+<div class="card">
+
+<h2>Avatar</h2>
+
+<div class="avatar">
+
+<img src="images/profile pic img.jpeg" alt="Avatar 1">
+
+<div>
+
+<h3>Madhav</h3>
+
+<p>Frontend Developer</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Toggle Switch</h2>
+
+<label class="switch">
+
+<input type="checkbox" checked>
+
+<span class="slider"></span>
+
+</label>
+
+<h2 style="margin-top:30px;">Progress</h2>
+
+<div class="progress">
+
+<div class="bar"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

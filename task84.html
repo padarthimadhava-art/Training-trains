@@ -1,0 +1,345 @@
+<!-- Create Figma design system -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figma Design System</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter,Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#1f2937;
+}
+
+header{
+background:#2563eb;
+color:#fff;
+padding:25px;
+text-align:center;
+}
+
+.container{
+width:90%;
+max-width:1300px;
+margin:40px auto;
+}
+
+.section{
+background:#fff;
+padding:30px;
+margin-bottom:30px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.section h2{
+margin-bottom:25px;
+color:#2563eb;
+}
+
+/* Color Palette */
+
+.colors{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.color{
+width:140px;
+height:140px;
+border-radius:15px;
+display:flex;
+align-items:flex-end;
+justify-content:center;
+padding:12px;
+font-weight:bold;
+color:#fff;
+}
+
+.primary{background:#2563EB;}
+.secondary{background:#7C3AED;}
+.success{background:#16A34A;}
+.warning{background:#F59E0B;}
+.danger{background:#DC2626;}
+
+/* Typography */
+
+.text h1{font-size:42px;}
+.text h2{font-size:32px;}
+.text h3{font-size:24px;}
+.text p{margin-top:10px;color:#555;}
+
+/* Buttons */
+
+.buttons button{
+padding:14px 28px;
+margin:10px;
+border:none;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+}
+
+.btn-primary{
+background:#2563EB;
+color:#fff;
+}
+
+.btn-outline{
+background:#fff;
+border:2px solid #2563EB;
+color:#2563EB;
+}
+
+.btn-dark{
+background:#111827;
+color:#fff;
+}
+
+/* Inputs */
+
+input{
+width:320px;
+padding:14px;
+margin:10px;
+border:1px solid #ccc;
+border-radius:10px;
+}
+
+/* Cards */
+
+.cards{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.card{
+width:280px;
+background:#f8fafc;
+padding:20px;
+border-radius:15px;
+}
+
+.card img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+/* Avatar */
+
+.avatar{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.avatar img{
+width:70px;
+height:70px;
+border-radius:50%;
+}
+
+/* Icons */
+
+.icons{
+display:flex;
+gap:20px;
+font-size:32px;
+}
+
+/* Spacing */
+
+.space{
+display:flex;
+gap:20px;
+}
+
+.box{
+background:#2563EB;
+color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:10px;
+}
+
+.s1{width:40px;height:40px;}
+.s2{width:60px;height:60px;}
+.s3{width:80px;height:80px;}
+.s4{width:100px;height:100px;}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:25px;
+background:#111827;
+color:#fff;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>🎨 Figma Design System</h1>
+<p>Reusable UI Components Built with HTML & CSS</p>
+</header>
+
+<div class="container">
+
+<div class="section">
+<h2>🎨 Color Palette</h2>
+
+<div class="colors">
+
+<div class="color primary">#2563EB</div>
+
+<div class="color secondary">#7C3AED</div>
+
+<div class="color success">#16A34A</div>
+
+<div class="color warning">#F59E0B</div>
+
+<div class="color danger">#DC2626</div>
+
+</div>
+</div>
+
+<div class="section text">
+
+<h2>🔤 Typography</h2>
+
+<h1>Heading 1</h1>
+
+<h2>Heading 2</h2>
+
+<h3>Heading 3</h3>
+
+<p>Body text used across the application.</p>
+
+</div>
+
+<div class="section buttons">
+
+<h2>🔘 Buttons</h2>
+
+<button class="btn-primary">Primary</button>
+
+<button class="btn-outline">Outline</button>
+
+<button class="btn-dark">Dark</button>
+
+</div>
+
+<div class="section">
+
+<h2>📝 Inputs</h2>
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email Address">
+
+</div>
+
+<div class="section">
+
+<h2>📦 Cards</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://picsum.photos/300/200" alt="">
+
+<h3>Dashboard Card</h3>
+
+<p>Reusable card component for any project.</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/301/200" alt="">
+
+<h3>Analytics Card</h3>
+
+<p>Perfect for admin dashboards and websites.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>👤 Avatar</h2>
+
+<div class="avatar">
+
+<img src="images/profile pic img.jpeg" alt="Avatar 1">
+
+<div>
+
+<h3>Madhava</h3>
+
+<p>Frontend Developer</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>😀 Icons</h2>
+
+<div class="icons">
+🏠 📊 📁 📩 ⚙️ ❤️ 🔔
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>📏 Spacing Scale</h2>
+
+<div class="space">
+
+<div class="box s1">8</div>
+
+<div class="box s2">16</div>
+
+<div class="box s3">24</div>
+
+<div class="box s4">32</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Figma Design System • HTML & CSS
+
+</footer>
+
+</body>
+</html>

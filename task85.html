@@ -1,0 +1,287 @@
+ <!-- Design Adobe XD prototype -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adobe XD Dashboard Prototype</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#eef3f8;
+    display:flex;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:250px;
+    background:#111827;
+    color:#fff;
+    min-height:100vh;
+    padding:30px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:40px;
+    color:#60A5FA;
+}
+
+.menu a{
+    display:block;
+    color:#d1d5db;
+    text-decoration:none;
+    padding:14px;
+    margin-bottom:10px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.menu a:hover{
+    background:#2563EB;
+    color:#fff;
+}
+
+/* Main */
+
+.main{
+    flex:1;
+    padding:40px;
+}
+
+/* Header */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+.search{
+    width:320px;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#fff;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.profile img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.card h2{
+    color:#2563EB;
+    margin-bottom:15px;
+}
+
+.card span{
+    font-size:36px;
+    font-weight:bold;
+}
+
+/* Chart */
+
+.chart{
+    margin-top:35px;
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.bars{
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-end;
+    height:220px;
+    margin-top:30px;
+}
+
+.bar{
+    width:50px;
+    background:#2563EB;
+    border-radius:10px 10px 0 0;
+}
+
+.b1{height:80px;}
+.b2{height:130px;}
+.b3{height:170px;}
+.b4{height:110px;}
+.b5{height:200px;}
+.b6{height:150px;}
+
+/* Activity */
+
+.activity{
+    margin-top:35px;
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.item{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 0;
+    border-bottom:1px solid #eee;
+}
+
+.item:last-child{
+    border:none;
+}
+
+@media(max-width:900px){
+
+body{
+flex-direction:column;
+}
+
+.sidebar{
+width:100%;
+min-height:auto;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">XD UI</div>
+
+<div class="menu">
+<a href="#">🏠 Dashboard</a>
+<a href="#">📊 Analytics</a>
+<a href="#">👥 Users</a>
+<a href="#">📁 Projects</a>
+<a href="#">⚙ Settings</a>
+</div>
+
+</div>
+
+<div class="main">
+
+<div class="header">
+
+<input class="search" placeholder="Search...">
+
+<div class="profile">
+
+<img src="images/profile pic img.jpeg" alt="Profile Picture">
+
+<div>
+<h3>Madhava</h3>
+<p>UI Designer</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h2>Total Users</h2>
+<span>12.5K</span>
+</div>
+
+<div class="card">
+<h2>Projects</h2>
+<span>245</span>
+</div>
+
+<div class="card">
+<h2>Revenue</h2>
+<span>$24K</span>
+</div>
+
+<div class="card">
+<h2>Growth</h2>
+<span>+38%</span>
+</div>
+
+</div>
+
+<div class="chart">
+
+<h2>Monthly Analytics</h2>
+
+<div class="bars">
+
+<div class="bar b1"></div>
+<div class="bar b2"></div>
+<div class="bar b3"></div>
+<div class="bar b4"></div>
+<div class="bar b5"></div>
+<div class="bar b6"></div>
+
+</div>
+
+</div>
+
+<div class="activity">
+
+<h2>Recent Activity</h2>
+
+<div class="item">
+<span>New User Registered</span>
+<strong>2 min ago</strong>
+</div>
+
+<div class="item">
+<span>Project Completed</span>
+<strong>20 min ago</strong>
+</div>
+
+<div class="item">
+<span>Payment Received</span>
+<strong>1 hour ago</strong>
+</div>
+
+<div class="item">
+<span>UI Updated</span>
+<strong>Today</strong>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
